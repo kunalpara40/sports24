@@ -1,0 +1,22 @@
+window.addEventListener('scroll', () => {
+      const text = document.querySelector('.text');
+      const textTop = text.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (textTop < windowHeight - 50) {
+        text.classList.add('show');
+      } else {
+        text.classList.remove('show');
+      }
+    });
+    window.addEventListener('scroll', () => {
+      const text = document.querySelector('.features');
+      const textTop = text.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (textTop < windowHeight - 50) {
+        text.classList.add('show');
+      } else {
+        text.classList.remove('show');
+      }
+    });
